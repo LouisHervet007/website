@@ -1,0 +1,101 @@
+:root {
+  --text: #ffffff;
+  --blue: #6f8fff;
+  --cyan: #00a9f4;
+  --grey: #a9b6c2;
+  --line: #1f3a4f;
+  --bg: #051c2c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  border-bottom: 1px solid var(--line);
+  padding: 1.5rem 8vw;
+}
+
+.brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+}
+
+main {
+  padding: 12vh 8vw;
+  max-width: 1100px;
+}
+
+.eyebrow {
+  color: var(--blue);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.15;
+  margin: 0 0 1.5rem;
+}
+
+.rule {
+  width: 64px;
+  height: 4px;
+  background: var(--cyan);
+  border: 0;
+  margin: 0 0 1.5rem;
+}
+
+.docs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 36em;
+}
+
+.docs li {
+  border-top: 1px solid var(--line);
+}
+
+.docs li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.docs a {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  color: var(--text);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.docs a::after {
+  content: "\2192";
+  color: var(--cyan);
+}
+
+.docs a:hover {
+  color: var(--cyan);
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  color: var(--grey);
+  font-size: 0.85rem;
+  padding: 1.5rem 8vw;
+}
