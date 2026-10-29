@@ -2,7 +2,7 @@
   --text: #ffffff;
   --blue: #6f8fff;
   --cyan: #00a9f4;
-  --grey: #a9b6c2;
+  --grey: #c3cdd6;
   --line: #1f3a4f;
   --bg: #051c2c;
   --card: #0a2a40;
@@ -51,9 +51,10 @@ main {
   flex: 1;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  align-items: center;
-  gap: 4rem;
-  padding: 3vh 6vw;
+  align-items: start;
+  align-content: center;
+  gap: 3rem;
+  padding: 3vh 5vw;
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
@@ -61,8 +62,8 @@ main {
 
 .pro {
   display: flex;
-  gap: 2.5rem;
-  align-items: center;
+  gap: 2rem;
+  align-items: flex-start;
 }
 
 .pro-text {
@@ -99,8 +100,9 @@ h2 {
   margin: 0 0 0.75rem;
 }
 
-.pro-text p:not(.eyebrow):not(.lead),
+.pro-text p:not(.eyebrow):not(.lead):not(.links),
 .outside p {
+  font-size: 1.02rem;
   color: var(--grey);
   margin: 0 0 1rem;
 }
@@ -116,8 +118,8 @@ h2 {
 .photo {
   position: relative;
   flex: 0 0 auto;
-  width: 240px;
-  height: min(300px, 38vh);
+  width: 200px;
+  height: min(260px, 36vh);
   min-height: 220px;
   border-radius: 8px;
   overflow: hidden;
@@ -163,6 +165,18 @@ h2 {
   text-decoration: none;
   font-weight: 600;
   font-size: 0.92rem;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.1rem 0 0;
+}
+
+.links a {
+  color: var(--cyan);
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .btn:hover {
